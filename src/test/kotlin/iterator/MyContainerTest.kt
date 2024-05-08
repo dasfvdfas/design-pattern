@@ -5,12 +5,13 @@ import kotlin.test.Test
 
 class MyContainerTest{
     val stu = arrayOf("bob","alice","sam")
-    val container = MyContainer<String>(stu)
+    val container = MyContainer(stu)
+    val iterator = container.iterator()
 
     @Test
     fun testIterator(){
-        while (container.iterator().hasNext()){
-            println(container.iterator().next())
+        while (iterator.hasNext()){
+            println(iterator.next())
         }
     }
 }

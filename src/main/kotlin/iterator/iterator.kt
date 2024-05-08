@@ -6,7 +6,6 @@ interface Iterator<T> {
     fun next() : T
 }
 
-
 // 定义一个容器接口
 interface Container<T> {
     fun iterator(): Iterator<T>
